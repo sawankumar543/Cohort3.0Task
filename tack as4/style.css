@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Jhordy";
+  src: url("./Font/Jhordy.otf") format("opentype");
+}
+
+/* ========================== Reset ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: white;
+  overflow-x: hidden;
+  padding: 32px 84px 54px 84px;
+}
+
+/* ========================== Header ========================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.branding-logo h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-icons img {
+  width: 28px;
+  cursor: pointer;
+}
+
+.shopping-cart-btn {
+  width: 56px;
+  height: 56px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.shopping-cart-btn img {
+  width: 22px;
+  filter: brightness(0) invert(1);
+}
+
+/* ========================== Hero section ========================= */
+
+.main-banner {
+  width: 100%;
+  padding: 80px 0px;
+  position: relative;
+}
+
+.main-banner h1 {
+  text-align: center;
+  font-size: 88px;
+  line-height: 1.1;
+  margin-bottom: 78px;
+}
+
+/* ========================== Floating elements ========================= */
+
+.sun-flower-decor {
+  width: 64px;
+
+  position: absolute;
+  top: 110px;
+  left: 30px;
+}
+
+.hibiscus-decor {
+  width: 64px;
+
+  position: absolute;
+  top: 120px;
+  right: 70px;
+}
+
+.blossom-decor {
+  width: 64px;
+
+  position: absolute;
+  top: 310px;
+  left: 330px;
+}
+
+.explore-btn-circle {
+  position: absolute;
+  top: 24%;
+  right: 8%;
+
+  z-index: 5;
+}
+
+.explore-btn-circle img {
+  width: 120px;
+}
+
+/* ========================== Left text ========================= */
+
+.side-text {
+  position: absolute;
+  top: 310px;
+  left: 0px;
+}
+
+.side-text span {
+  font-size: 14px;
+}
+
+.side-text h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 14px;
+}
+
+/* ========================== Image grid ========================= */
+
+.product-grid {
+  height: 750px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 16px;
+  position: relative;
+}
+
+.product-grid h2 {
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 22%;
+  right: 6%;
+}
+
+.product-card {
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Product Cards */
+
+.pc-1 {
+  grid-column: 1;
+  grid-row: 3 / 6;
+}
+
+.pc-2 {
+  grid-column: 2;
+  grid-row: 2 / 4;
+}
+
+.pc-3 {
+  grid-column: 2;
+  grid-row: 4 / 7;
+}
+
+.pc-4 {
+  grid-column: 3;
+  grid-row: 1 / 8;
+}
+
+.pc-5 {
+  grid-column: 4;
+  grid-row: 2 / 5;
+}
+
+.pc-6 {
+  grid-column: 4;
+  grid-row: 5 / 7;
+}
+
+.pc-7 {
+  grid-column: 5;
+  grid-row: 3 / 6;
+}
+
+.dark-star-element {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-44%, -50%);
+  z-index: 10;
+}
+
+/* ========================== Footer section ========================= */
+
+.bottom-section {
+  width: 100%;
+  position: relative;
+
+  margin-top: -150px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.testimonial-box img {
+  width: 40px;
+  height: auto;
+}
+
+.testimonial-box p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.testimonial-box h2 {
+  font-family: "Jhordy";
+  width: fit-content;
+  margin-top: 20px;
+
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.testimonial-box .highlight-line {
+  width: 100%;
+  height: 16px;
+  background-color: #f7dc68;
+  margin-top: -30px;
+}
+
+.cherry-flower {
+  position: absolute;
+  width: 64px;
+  top: 50%;
+  left: 30%;
+}
+
+.scroll-down-btn {
+  padding: 20px 40px;
+  border: 1px solid #ebe9e9;
+  border-radius: 20px;
+  font-weight: 600;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  margin-bottom: 1%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.article-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 1%;
+}
+
+.rose-flower {
+  position: absolute;
+  width: 54px;
+  top: 0;
+  right: 5%;
+}
+
+.decorative-shape {
+  position: absolute;
+  top: 10rem;
+  right: 34rem;
+  width: 28px;
+  height: 40px;
+  background: #e7d3a7;
+  transform: skew(210deg);
+}
+
+.article-content span {
+  font-size: 14px;
+}
+
+.article-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 10px;
+}
+
+.article-info h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.article-info h2 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.navigate-arrow-btn {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+
+  background: #000;
+  color: white;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.navigate-arrow-btn img {
+  width: 24px;
+  filter: brightness(0) invert(1);
+}
