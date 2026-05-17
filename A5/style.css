@@ -1,0 +1,267 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    padding: 15px 17px;
+}
+main {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+    background-image: url(daniela-captari-9l_USRjGHdo-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+main nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.logo {
+    font-size: 24px;
+    color: white;
+}
+.right {
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+.right a:nth-child(3) {
+    padding: 10px 15px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+main .center {
+    height: calc(100% - 10%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.center h1 {
+    font-size: 7.5rem;
+    color: white;
+}
+.center h3 {
+    font-size: 24px;
+    color: white;
+}
+.line {
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    background-color: white;
+}
+.sect1 {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f7f6;
+    margin-top: 20px;
+}
+.container {
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.container h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+.line2 {
+    display: inline-block;
+    width: 70px;
+    background-color: black;
+    height: 4px;
+}
+.cards {
+    width: 100%;
+    height: calc(100% - 20%);
+    background-color: #f5f7f6;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+}
+.card {
+    width: 30%;
+    background-color: #ffffff;
+    max-width: 380px;
+    height: 70%;
+    min-height: 590px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.801);
+}
+
+.top1 {
+    background-image: url(https://images.unsplash.com/photo-1511936606692-5e0d73f6b638?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.top2 {
+    background-image: url(https://images.unsplash.com/photo-1624817670169-57a1245cf3f1?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.top3 {
+    background-image: url(https://images.unsplash.com/photo-1536431311719-398b6704d4cc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.top {
+    height: 50%;
+    width: 100%;
+     background-position: center;
+    background-size: cover;
+}
+.bottom {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.line3 {
+    display: inline-block;
+    height: 2px;
+    background-color: black;
+    width: 45px;
+}
+.bottom p {
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+}
+.aboutsection {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    padding: 30px 0;
+}
+.aboutsection img {
+    height: 100%;
+    width: 50%;
+
+}
+
+.note {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.cont h2 {
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+    width: fit-content;
+}
+.cont h2::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    bottom: -15px;
+    left: 50px;
+    position: absolute;
+    background-color: black;
+}
+.cont p{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.subsection {
+    width: 100%;
+    height: 70%;
+    background-color: #f5f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.subsection h2 {
+    font-size: 47px;
+}
+.subsection h3 {
+    font-weight: 500;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+   align-items: center;
+   gap: 20px;
+}
+form button {
+    width: fit-content;
+}
+form input {
+    padding: 15px 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+form button {
+    padding: 5px 25px;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height: 30%;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wraper {
+    width: 60%;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.icons i {
+    font-size: 25px;
+}
+.rightFooter a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.795);
+    margin-left: 5px;
+    font-size: 15px;
+}
