@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Process Section</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#020910;
+      overflow:hidden;
+      font-family:Inter,sans-serif;
+      position:relative;
+    }
+
+    /* BACKGROUND */
+
+    body::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+      radial-gradient(circle at top center,#032535 0%,transparent 35%),
+      linear-gradient(to right,#01060c,#03111b,#01060c);
+      opacity:.95;
+    }
+
+    .wrapper{
+      width:95%;
+      max-width:1900px;
+      position:relative;
+      z-index:2;
+    }
+
+    /* TITLE */
+
+    .title{
+      text-align:center;
+      font-family:Orbitron,sans-serif;
+      font-size:62px;
+      font-weight:500;
+      letter-spacing:3px;
+      color:white;
+      margin-bottom:55px;
+    }
+
+    .title span{
+      color:#00ffe7;
+    }
+
+    /* CARDS */
+
+   .steps{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:24px;
+  position:relative;
+}
+
+.step{
+  width:220px;
+  height:150px;
+  border-radius:18px;
+  border:1px solid rgba(0,255,255,.16);
+  background:rgba(2,8,14,.88);
+  position:relative;
+  padding:22px 22px;
+  overflow:hidden;
+  backdrop-filter:blur(10px);
+  transition:.35s;
+}
+
+.step:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  right:-25px;
+  top:50%;
+  transform:translateY(-50%);
+  width:25px;
+  border-top:2px dotted rgba(0,255,255,.25);
+}
+
+.top{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:16px;
+}
+
+.icon-box{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  border:1px solid rgba(0,255,255,.22);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#00ffe7;
+  font-size:20px;
+}
+
+.number{
+  color:#55fff2;
+  font-size:24px;
+  font-weight:500;
+  font-family:Orbitron,sans-serif;
+}
+
+.heading{
+  color:white;
+  font-size:15px;
+  font-weight:500;
+  margin-bottom:10px;
+  letter-spacing:.5px;
+}
+
+.desc{
+  color:#8b9ba8;
+  font-size:13px;
+  line-height:1.5;
+}
+
+    /* RESPONSIVE */
+
+    @media(max-width:1700px){
+
+      .steps{
+        flex-wrap:wrap;
+      }
+
+      .step:not(:last-child)::after{
+        display:none;
+      }
+
+    }
+
+    @media(max-width:768px){
+
+      body{
+        overflow:auto;
+        padding:50px 0;
+      }
+
+      .title{
+        font-size:40px;
+        margin-bottom:35px;
+      }
+
+      .step{
+        width:100%;
+        max-width:420px;
+        height:auto;
+      }
+
+      .heading{
+        font-size:22px;
+      }
+
+      .desc{
+        font-size:17px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="title">
+      КАК МЫ <span>РАБОТАЕМ</span>
+    </div>
+
+    <div class="steps">
+
+      <!-- STEP 1 -->
+
+      <div class="step">
+
+        <div class="top">
+
+          <div class="icon-box">
+            <i class="fa-regular fa-comments"></i>
+          </div>
+
+          <div class="number">01</div>
+
+        </div>
+
+        <div class="heading">
+          ОБСУЖДЕНИЕ
+        </div>
+
+        <div class="desc">
+          Изучаем идею<br>
+          и требования
+        </div>
+
+      </div>
+
+      <!-- STEP 2 -->
+
+      <div class="step">
+
+        <div class="top">
+
+          <div class="icon-box">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+
+          <div class="number">02</div>
+
+        </div>
+
+        <div class="heading">
+          ПЛАНИРОВАНИЕ
+        </div>
+
+        <div class="desc">
+          Проектируем механику<br>
+          и дизайн
+        </div>
+
+      </div>
+
+      <!-- STEP 3 -->
+
+      <div class="step">
+
+        <div class="top">
+
+          <div class="icon-box">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <div class="number">03</div>
+
+        </div>
+
+        <div class="heading">
+          РАЗРАБОТКА
+        </div>
+
+        <div class="desc">
+          Создаем игру<br>
+          и контент
+        </div>
+
+      </div>
+
+      <!-- STEP 4 -->
+
+      <div class="step">
+
+        <div class="top">
+
+          <div class="icon-box">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+
+          <div class="number">04</div>
+
+        </div>
+
+        <div class="heading">
+          ТЕСТИРОВАНИЕ
+        </div>
+
+        <div class="desc">
+          Проверяем, полируем<br>
+          и улучшаем
+        </div>
+
+      </div>
+
+      <!-- STEP 5 -->
+
+      <div class="step">
+
+        <div class="top">
+
+          <div class="icon-box">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+
+          <div class="number">05</div>
+
+        </div>
+
+        <div class="heading">
+          ЗАПУСК
+        </div>
+
+        <div class="desc">
+          Релиз и поддержка<br>
+          проекта
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

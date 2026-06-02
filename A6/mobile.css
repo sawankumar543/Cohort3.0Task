@@ -1,0 +1,513 @@
+/*navbar*/
+  nav {
+    padding: 0.8rem 1rem;
+    width: calc(100% - 24px);
+    margin-top: 12px;
+  }
+
+  .site-header.is-sticky nav {
+    padding: 0.7rem 1rem;
+  }
+
+  .nav-part-1 h3 {
+    display: none;
+  }
+  .nav-part-1 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-part-1 span i {
+    font-size: 1.8rem;
+    color: #2a2857;
+    cursor: pointer;
+  }
+  .nav-part-2 img {
+    height: 4vh;
+    object-fit: contain;
+  }
+  .nav-part-3 h3 {
+    display: none;
+  }
+
+  .nav-cart img {
+    height: 26px;
+  }
+
+  .count {
+    top: -4px;
+    right: -6px;
+    font-size: 0.6rem;
+    min-width: 0.95rem;
+    min-height: 0.95rem;
+    padding: 0.05rem 0.2rem;
+  }
+/*hero*/
+  .hero {
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=720");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .hero-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero .hero-text h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: reckless;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .hero .hero-text p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    font-family: figtree;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-text button {
+    padding: 0.7rem 3.3rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2a2857;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+  }
+/*page-2*/
+  .page2-bottom{
+  margin: 0rem 0.5rem;
+  
+}
+
+  .page2-btn{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+}
+
+
+.page2-bottom .card{
+  width: 70vw;
+
+}
+
+.page2-bottom-btn{
+  height: 5rem;
+}
+
+.page2-bottom-btn button{
+  padding: 1rem 4rem;
+  margin-bottom: 4rem;
+}
+/*page-3*/
+.page3 {
+  padding: 3rem 1.25rem 4rem;
+  align-items: flex-start;
+}
+
+.page3 .page3-content {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.page3-content .content-top {
+  height: auto;
+  gap: 1.25rem;
+}
+
+.content-top h3 {
+  width: 100%;
+  font-size: clamp(1.4rem, 5vw, 1.9rem);
+  line-height: 1.25;
+}
+
+.content-top input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.content-top input::placeholder {
+  font-size: 1rem;
+}
+
+.page3 .content-bottom {
+  height: auto;
+  gap: 1rem;
+  width: 100%;
+}
+
+.content-bottom h4 {
+  letter-spacing: 0.04em;
+}
+
+.content-bottom-btns {
+  gap: 0.45rem;
+}
+
+.content-bottom-btns .btn {
+  font-size: 0.82rem;
+  padding: 0.4rem 0.85rem;
+}
+
+.content-bottom-btns .mobile-hide {
+  display: none;
+}
+
+/*page-4*/
+.page4 {
+  height: auto;
+  min-height: 100vh;
+  background-image: url('https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900');
+  padding: 2rem 1.25rem 3rem;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.page4-btn {
+  margin-top: 3.5rem;
+}
+
+.page4 .page4-heading h2 {
+  font-size: clamp(2.2rem, 13vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.page4 .page4-para p {
+  font-size: clamp(0.95rem, 3.5vw, 1.15rem);
+  line-height: 1.45;
+  padding: 0 0.25rem;
+}
+
+.page4-bottom {
+  gap: 2rem;
+  width: 100%;
+}
+
+.page4-bottom .icons {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.page4-bottom .icons img {
+  width: 52px;
+  height: auto;
+}
+
+.page4-bottom button {
+  width: 100%;
+  max-width: 280px;
+}
+
+.page4-floating-img img {
+  height: 64px;
+  width: auto;
+  top: auto;
+  bottom: 0.5rem;
+  right: 0.75rem;
+}
+
+/*page-6*/
+.page6 {
+  flex-direction: column;
+  height: auto;
+  min-height: auto;
+}
+
+.page6-left {
+  height: 42vh;
+  min-height: 260px;
+  width: 100%;
+}
+
+.page6-right {
+  height: auto;
+  width: 100%;
+  padding: 2.75rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.75rem;
+}
+
+.page6-right h2 {
+  text-align: center;
+  font-size: clamp(1.85rem, 7vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.page6-right button {
+  padding: 0.85rem 2.25rem;
+  font-size: 1rem;
+}
+
+.accessibility-btn img {
+  width: 50px;
+  height: 50px;
+}
+.page5{
+  padding: 5rem 0.5rem;
+}
+
+.card-top h3{
+  font-size: 1.7rem;
+}
+
+.page5-bottom .page5-card{
+  width:80%;
+}
+
+.card-bottom-right p{
+  font-size: 0.6rem;
+}
+/*page-7*/
+.page7{
+  padding: 3rem 0.5rem;
+  min-height: 110vh;
+}
+
+.page7-top h3{
+ line-height: 3.5rem;
+ font-weight: 600;
+
+}
+
+
+.page7 .page7-bottom{
+  flex-direction: column;
+  min-height: 95vh;
+  justify-content: flex-start;
+  gap: 0rem;
+  width: 90%;
+  overflow: visible;
+}
+
+.page7 .left-icon{
+  display: none;
+}
+
+.page7 .right-icon{
+  display: none;
+}
+
+.page7-bottom .page7-bottom-left{
+  width: 100%;
+  min-height: 32vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.page7-bottom-left .desktop-img{
+  display: none;
+}
+
+.page7-bottom-left .mobile-img{
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -18%);
+  width: 85%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.page7-bottom .page7-bottom-right{
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.8rem;
+}
+
+.page7-bottom-right .nice-btn {
+  align-items: center;
+  justify-content: center;
+}
+
+.page7-bottom-right h3{
+  line-height: 3rem;
+}
+
+.page7-bottom-right p{
+  width: 92%;
+}
+/*page-8*/
+.page8{
+  padding: 3rem 0.8rem;
+}
+
+.page8 .page8-top{
+  height: 20vh; 
+  margin-top: 5rem;
+}
+
+.page8 .page8-top h2{
+  width: 100%;
+  text-align: start;
+}
+
+.page8-bottom .page8-card{
+  width: 70vw;
+  
+}
+
+.page8 .page8-bottom{
+  gap: 0.9rem;
+}
+
+.page8-btm-btn button{
+  padding: 1rem 2.5rem;
+}
+/*page-9*/
+.page9{
+  flex-direction: column;
+  position: static;
+}
+
+.page9-img{
+  height: 50%;
+  width: 100%;
+}
+
+
+
+.page9 .page9-card{
+  height: 50%;
+  width :100%;
+  position: static;
+  margin-left: 0rem;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.page9-card h3{
+  width: 100%;
+  text-align: center;
+
+}
+
+.page9-card button{
+  padding: 1rem 4rem;
+}
+/*footer*/
+footer{
+    padding-top: 3rem;
+  }
+
+  .footer-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-top-left h3{
+    font-size: 1.6rem;
+  }
+
+  .footer-top-left p{
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form{
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .footer-top input{
+    width: 100%;
+    min-width: unset;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form button{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .footer-top-right{
+    align-self: flex-start;
+  }
+
+  .footer-top-icons{
+    gap: .8rem;
+  }
+
+  .footer-top-icons .icon{
+    height: 2.7rem;
+    width: 2.7rem;
+  }
+
+  .footer-top-icons .icon i{
+    font-size: 1.3rem;
+  }
+
+  .footer-center{
+    width: 95%;
+    padding: 2rem 1.5rem;
+  }
+
+  .center-box{
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .box-left{
+    width: 100%;
+  }
+
+  .main-link h3{
+    font-size: 1.5rem;
+  }
+
+  .sublinks p{
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom{
+    min-height: 25vh;
+  }
+
+  .footor-logo{
+    top: 10%;
+  }
+
+  .footor-logo img{
+    width: 150px;
+  }
